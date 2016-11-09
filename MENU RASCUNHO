@@ -1,0 +1,85 @@
+#include <conio.h>
+#include <stdio.h> 
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+#include <locale.h>
+#include <windows.h>
+#include <time.h>
+
+int main()
+{
+
+setlocale(LC_ALL,"Portuguese");
+
+int num=1;
+system("color 07");
+
+while (num!=27)
+{
+
+printf("\n\t*************************************************************");
+printf("\n\t*                                                           *");
+printf("\n\t*         DIGITE O NUMERO DA OPCAO DESEJADA:                *");
+printf("\n\t*                                                           *");
+printf("\n\t*             1 - PRODUTOS E SERVIÇOS ;                     *");
+printf("\n\t*             2 - ÁREA DE CLIENTES ;                        *");
+printf("\n\t*             Esc - saida do programa                       *");
+printf("\n\t*                                                           *");
+printf("\n\t*                                                           *");
+printf("\n\t*************************************************************");
+printf("\n");
+scanf("%d",&num);
+fflush(stdin);
+
+system("pause");
+system("cls");
+
+
+switch (num) 
+ {
+
+  case 1:
+  {
+ 
+	printf("\n\n Opção de produtos e serviços; ");
+    if (num==1)
+    break;
+  
+  }
+  case 2:
+  {
+    
+	printf("\n\n Opcao de clientes e atendimentos;");
+    break;
+
+  }
+
+  default:
+  {
+ 
+    if( num==27)
+  {
+  
+  continue;
+  }
+  
+	printf("\n\n Nenhuma opcao foi escolhida ");
+    break;
+   
+  }
+
+}
+
+}
+
+if( num==27)
+printf("\n\n O Programa foi fechado");
+printf("\n\n Digite qualquer tecla para sair...");
+system("cls");
+
+
+
+getch(); 
+
+}
